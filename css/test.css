@@ -1,0 +1,39 @@
+body, div, dl, dt, dd, ul, ol, li,  h4, h5, h6, pre, form, fieldset, p, b, blockquote, table, th, img, font
+, hr{margin:0;padding:0;}
+/********* door start *********/
+.door {
+  width: 100%;
+  background: url('../images/content.jpg') 0 0 no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  font-size: 0px;
+}
+.door .left,
+.door .right {
+  width: 50%;
+  display: inline-block;
+  overflow-x: scroll;
+}
+.right::-webkit-scrollbar,
+.left::-webkit-scrollbar {
+  display: none;
+}
+/* 翻转 */
+.door .right {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+.door .shade {
+  width: 200%;
+}
+.door .shade .half img {
+  width: 50%;
+}
+.door .right .shade .half {
+  overflow: hidden;
+}
+/********* door end *********/
+
